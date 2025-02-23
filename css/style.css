@@ -1,0 +1,52 @@
+.tick-credits {
+    display: none !important;
+}
+
+.chart-area {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.blog .blockquote,
+.blog p {
+    flex: 1;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .blog {
+        flex-direction: column;
+        /* Stacks elements vertically on smaller screens */
+    }
+
+    .blog .blockquote,
+    .blog p {
+        margin: 10px 0;
+        /* Adds vertical spacing on mobile */
+    }
+
+    .blog img {
+        width: 100%;
+        /* Full width on mobile for responsiveness */
+    }
+}
+
+.blog img {
+    box-shadow: 5px;
+    width: 90%;
+    /* Keeps the image larger as requested earlier (adjust as needed) */
+    height: auto;
+    /* Maintains aspect ratio */
+}

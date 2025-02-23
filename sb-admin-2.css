@@ -10830,6 +10830,10 @@ a:focus {
   width: 100%;
 }
 
+.tick-credits {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .chart-area {
     height: 20rem;
