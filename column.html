@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cardiovascular Diseases Data Visualize Tram Kiet Khoa 5</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Kiet - Tram <sup></sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Model
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="model.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Model</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link " href="model_input.html">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Input</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Data Visualize
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="column.html">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Column Charts</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="graph.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Graph Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="choropleth.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Choropleth map</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="treemap.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Treemap</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/data icon.png" alt="...">
+                <p class="text-center mb-2"><strong>Pro Version</strong> is packed with premium features, components,
+                    and more!</p>
+                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to
+                    Pro!</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column" style="height: auto;">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                    <img style="  width: 35px; height: 30px;" class="img-profile rounded-circle"
+                                        src="img/search icon.png">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tram - Kiet</span>
+                                <img class="img-profile rounded-circle" src="img/cappy icon.png">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+                <div class="blog_area">
+
+
+                    <div class="d-flex blog">
+                        <blockquote class="blockquote flex-fill">
+                            <p>Analysis of Age-Standardized Death Rates from Cardiovascular Diseases in Japan
+                                (1950–2025)
+                            </p>
+                            <div class="img-container">
+                                <img src="img/VD_bar chart_all.jpg" alt="" class="img-fluid">
+                            </div>
+                        </blockquote>
+                        <p class="flex-fill ">
+                        <p>The line chart shows a decline in age-standardized death rates from cardiovascular diseases
+                            in
+                            Japan, from 300 per 100,000 in 1950 to below 50 by 2025. Rates peaked at 350 in the early
+                            1970s,
+                            likely due to limited <span style="color: #FF6347;">heart disease awareness</span>. A steady
+                            drop began in the late 1970s, reaching 250 by 1980, driven by improved <span
+                                style="color: #4169E1;">access to preventive healthcare</span>. By the early 2000s,
+                            rates
+                            fell to 200, aided by <span style="color: #FFD700;">reduction in smoking</span> and <span
+                                style="color: #00CED1;">healthy diet adoption</span>. Minor fluctuations occurred, but
+                            progress in reducing <span style="color: #2E8B57;">deaths due to cardiovascular
+                                diseases</span>
+                            highlights the need for ongoing public health efforts.</p>
+                        </p>
+                    </div>
+
+                    <div class="d-flex blog">
+                        <blockquote class="blockquote flex-fill">
+                            <p>Analysis of Age-Standardized Death Rates from Cardiovascular Diseases in
+                                Australia(1977–2019)
+                            </p>
+                            <div class="img-container">
+                                <img src="img/VD_bar chart_usa.jpg" alt="" class="img-fluid">
+                            </div>
+                        </blockquote>
+                        <p class="flex-fill ">
+                        <p>The bar chart shows age-standardized <span style="color: #2E8B57;">death rates from
+                                cardiovascular diseases</span> per 100,000 people from 1977 to 2019. In 1977, the rate
+                            peaked at around 700, but it sharply declined to 500 by 1980, likely due to improved <span
+                                style="color: #FF6347;">heart disease awareness</span> and <span
+                                style="color: #4169E1;">access to preventive healthcare</span>. Throughout the 1980s and
+                            1990s, rates fluctuated between 400 and 500, but a steady decline began in the late 1990s,
+                            falling below 300 by 2019. This trend reflects advancements in medical treatments, <span
+                                style="color: #FFD700;">reduction in smoking</span>, and <span
+                                style="color: #00CED1;">healthy diet adoption</span>. However, minor increases in some
+                            years
+                            suggest ongoing challenges. The chart highlights significant progress in cardiovascular
+                            health
+                            but emphasizes the need for continued public health initiatives.</p>
+                        </p>
+                    </div>
+
+                    <div class="d-flex blog">
+                        <blockquote class="blockquote flex-fill">
+                            <p>Analysis of Age-Standardized Death Rates from Cardiovascular Diseases in Mexico
+                                (1960–2020)
+                            </p>
+                            <div class="img-container">
+                                <img src="img/bar line.png" alt="" class="img-fluid">
+                            </div>
+                        </blockquote>
+                        <p class="flex-fill ">
+                        <p>The line chart shows fluctuating age-standardized death rates from cardiovascular diseases in
+                            Mexico, starting at around 200 per 100,000 in 1960. Rates peaked at 220 in the 1980s and
+                            early
+                            1990s, possibly due to limited <span style="color: #FF6347;">heart disease awareness</span>.
+                            A
+                            significant decline began in the late 1990s, dropping to 160 by 2000, driven by improved
+                            <span style="color: #4169E1;">access to preventive healthcare</span> and <span
+                                style="color: #FFD700;">reduction in smoking</span>. However, rates rose again after
+                            2010,
+                            reaching 200 by 2020, indicating challenges like insufficient <span
+                                style="color: #00CED1;">healthy diet adoption</span>. The chart underscores ongoing
+                            issues
+                            in managing <span style="color: #2E8B57;">deaths due to cardiovascular diseases</span>,
+                            highlighting the need for sustained public health efforts.
+                        </p>
+                        </p>
+                    </div>
+                    <footer class="bg-white sticky-footer w-100">
+                        <div class="container">
+                            <div class="copyright text-center">
+                                <span>Copyright &copy; Kiet - Tram 2025</span>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+
+                
+
+
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/demo/chart-area-demo.js"></script>
+<script src="js/demo/chart-pie-demo.js"></script>
+
+<!-- clock thingy -->
+<script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
+<script>
+    function setupFlip(tick) {
+
+        Tick.helper.interval(function () {
+
+            tick.value++;
+
+            // Set `aria-label` attribute which screenreaders will read instead of HTML content
+            tick.root.setAttribute('aria-label', tick.value);
+
+        }, 1000);
+
+    }
+</script>
+
+
+
+</html>

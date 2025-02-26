@@ -1,0 +1,39 @@
+{
+  "chart": {
+    "title": "Number of deaths from cardiovascular diseases",
+    "subtitle": "Estimated annual number of deaths from [cardiovascular diseases](#dod:cvd).",
+    "citation": "World Health Organization (2024)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/deaths-from-cardiovascular-disease-ghe?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "China",
+      "India",
+      "South Africa",
+      "Nigeria",
+      "United States",
+      "France",
+      "Brazil",
+      "Australia",
+      "Philippines"
+    ]
+  },
+  "columns": {
+    "Total deaths from cardiovascular diseases among both sexes": {
+      "titleShort": "Total deaths from cardiovascular diseases among both sexes",
+      "titleLong": "Total deaths from cardiovascular diseases among both sexes",
+      "descriptionShort": "Estimated number of deaths from cardiovascular diseases in both sexes.",
+      "descriptionKey": [],
+      "shortUnit": "",
+      "unit": "deaths",
+      "timespan": "2000-2021",
+      "type": "Numeric",
+      "owidVariableId": 969564,
+      "shortName": "death_count__age_group_allages__sex_both_sexes__cause_cardiovascular_diseases",
+      "lastUpdated": "2024-07-30",
+      "citationShort": "World Health Organization (2024) – with major processing by Our World in Data",
+      "citationLong": "World Health Organization (2024) – with major processing by Our World in Data. “Total deaths from cardiovascular diseases among both sexes” [dataset]. World Health Organization, “Global Health Estimates” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/969564.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-01-12",
+  "activeFilters": {}
+}
